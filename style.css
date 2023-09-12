@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     /*background-color: #c9d2d7;*/
+    font-family: sans-serif;
+    outline: none;
+}
+
+.container {
+    background-image: url("abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    /*background-color: #c9d2d7;*/
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.calculator{
+    background-color: #ecf0f3;
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: inset 5px 5px 22px #ffffff, 
+                     5px 5px 22px rgba(0,0,0,.3); 
+                     
+    display: grid;
+    grid-template-columns: repeat(4 , 68px);
+}
+
+#calculator-label {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px; /* Adjust the font size as needed */
+    color: #676767; /* Adjust the color as needed */
+}
+
+
+input{
+    
+    grid-column: span 4;
+    height: 70px;
+    width: 260px;
+    background-color: #ecf0f3;
+    box-shadow: inset -5px -5px 12px #ffffff, inset 5px 5px 12px rgba(0,0,0,.16);
+    border: none;
+    border-radius: 20px;
+    color: rgba(70,70,70);
+    font-size: 50px;
+    text-align: end;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding: 20px;
+}  
+
+button{
+    height: 48px;
+    width: 48px;
+    background-color: #ecf0f3;
+    box-shadow: -5px -5px 12px #ffffff, 5px 5px 12px rgba(0,0,0,.16);
+    border: none;
+    border-radius: 30%;
+    margin: 8px;
+    font-size: 16px; 
+    transition: box-shadow 0.3s ease;
+}
+
+button:hover{
+    box-shadow: 0 0 10px #0ef;
+
+}
+
+.calculator span{
+    color: rgb(2, 110, 2);
+    font-weight: 300;
+}
+
+
+.equal{
+    width: 115px;
+    border-radius: 40px;
+    font-weight: 800;
+    color: rgb(218, 155, 10);
+    background-color: #ecf0f3;
+    box-shadow: -5px -5px 12px #ffffff,  5px 5px 12px rgba(0,0,0,.16);
+
+}
+
+.footer p{
+    display: flex;
+    justify-content: center;
+    font-size: .8rem;
+    color: #777a7b;
+    background: transparent;
+    transform: translateY(-70px);
+}
